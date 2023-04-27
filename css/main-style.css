@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    font: size 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+header{
+    height:30%;
+    background-color: #D3FFB7;
+}
+
+header > img {
+    padding:3%;
+    width:35%;
+}
+
+
+header > nav ul {
+    list-style:none;
+    text-align:right;
+    
+}
+
+#welcome{
+    padding:2%;
+    margin:1%;
+
+}
+
+
+
+form{
+    padding:2%;
+}
+
+.portfolio{
+   /* border-style: double ; */
+    border-bottom:#5E0C99 1px dashed;
+    padding-bottom: 2%;
+}
+
+
+
+/* MOBILE NAV */
+.menu-wrap {                           
+    height: 3em; 
+    top:0; 
+    background-color:#D3FFB7;
+    background-image: url(../images/sierra-hinton-green-logo.png); 
+    background-position:center; 
+    background-size:40%;
+    background-repeat: no-repeat;
+
+    padding: 10px 15px;                
+    position: fixed;        
+    width: 100%;                     
+}
+.menu-icon {
+    font-size: 2em;                   
+    color: #000000;               
+}
+.mobile-nav {
+    position: absolute;                
+   background-color:#D3FFB7;
+    top: 3em;                       
+    left:0;                           
+    width: 100%;                    
+}
+.mobile-nav ul {
+    list-style-type: none;          
+    max-height: 0em;                  
+   overflow: hidden;             
+    transition: max-height 0.5s;    
+}
+.mobile-nav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight:bold;
+    text-decoration:none;
+    letter-spacing:0.2em;
+    display: block;                   
+    padding: .75em 1em;         
+    color: #000000;                     
+    text-decoration: none;       
+}
+
+.mobile-nav ul li a:hover, nav ul li a:focus {
+    color:#00045C;
+    transition: opacity ease 0.4s;              
+}
+#checkbox {
+    display: none;                   
+}
+#checkbox:checked ~ nav ul {
+    max-height: 20em;                 
+}
+
+
+
+/* MAIN NAVIGATION  */
+#main-nav ul li{
+    display:none;
+}
+
+#main-nav{
+    display:none;
+}
+
+
+
+nav a:active{
+    border-bottom: black 2px solid;
+}
+
+nav a:hover{
+    transition: ease 0.2s;
+    color:#00045C;
+}
+
+
+/* images */
+
+img{
+    max-width:100%;
+}
+
+#portfolio img{
+    max-width:100%;
+    padding:1%;
+}
+
+/* footer & social media   */
+
+footer{
+    font-family: 'Quicksand', sans-serif;
+    text-align:center;
+    border-top: #5E0C99 2px solid;
+    margin-top:2%;
+
+}
+
+.social-media{
+    padding: 2%;
+}
+
+#copy-right{
+    background-color: #5E0C99;
+    color:white;
+}
+
+footer img{
+    width:20%;
+}
+
+
+
+/* viewports & media */
+@media screen and (max-width:600px){
+.logo-image{
+         display: none; }
+       
+}
+
+
+
+
+@media screen and (min-width:750px){
+
+
+
+/*MOBILE NAV */
+.menu-icon {
+    display: none;             
+}
+.mobile-nav {
+    position: relative;
+    top: -1em;            
+}
+.menu-wrap .mobile-nav{
+    display: none;
+}
+.menu-wrap{
+    top:0; 
+    opacity:0;
+}
+
+
+/* MAIN NAV */
+
+#main-nav{
+display:unset;
+}    
+
+
+/* NAVIGATION */
+
+header > nav ul li {
+    display:inline-block;
+    padding:0 2%;
+}
+header > nav a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight:bold;
+    text-decoration:none;
+    letter-spacing:0.2em;
+    color: #000000;
+}
+
+
+#welcome{
+    padding:1%;
+}
+.subtext-and{
+letter-spacing: 0.2rem;
+color:#5E0C99;
+font-family: 'Lato', sans-serif;
+
+}
+
+.welcome-text{
+    margin-top:2%;
+    padding:1%;
+    font-size: x-large;
+}
+
+
+
+}
